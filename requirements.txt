@@ -1,0 +1,21 @@
+# Core MCP and AI packages - TESTED AND WORKING
+mcp>=1.0.0                  # Model Context Protocol SDK - enables our app to provide tools to LLMs
+anthropic>=0.34.0           # Claude API client - communicates with Claude LLM for analysis
+
+# HTTP requests and data processing
+requests>=2.31.0            # HTTP library - fetches data from Alpha Vantage financial API
+pandas>=2.1.0               # Data analysis library - manipulates financial datasets, time series
+numpy>=1.24.0               # Numerical computing - efficient array operations for calculations
+
+# Configuration and utilities
+python-dotenv>=1.0.0        # Environment variables - securely loads API keys from .env file
+pydantic>=2.5.0             # Data validation - ensures API responses have correct structure
+click>=8.1.0                # Command-line interface - creates user-friendly CLI commands
+
+# Optional: Web framework (for future web interface)
+fastapi>=0.104.0            # Modern web framework - builds REST API endpoints (if needed later)
+uvicorn>=0.24.0             # ASGI server - runs FastAPI applications in production
+
+# Development tools (optional)
+pytest>=7.4.0               # Testing framework - writes and runs unit tests for our code
+black>=23.0.0               # Code formatter - automatically formats Python code consistently
