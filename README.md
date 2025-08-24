@@ -3,12 +3,14 @@
 A sophisticated finance analyzer application that leverages the Model Context Protocol (MCP) to connect Claude LLM with real-time financial data APIs. The system uses a client-server architecture where an MCP server provides financial tools, and a host client integrates these tools with Claude for intelligent financial analysis.
 
 ## Architecture
+
 ┌─────────────────┐    HTTP/SSE    ┌──────────────────┐    API Calls    ┌─────────────────┐
 │                 │◄──────────────►│                  │◄───────────────►│                 │
 │   Host Client   │                │   MCP Server     │                 │ Alpha Vantage   │
 │  (Claude LLM)   │                │ (Financial APIs) │                 │      API        │
 │                 │                │                  │                 │                 │
 └─────────────────┘                └──────────────────┘                 └─────────────────┘
+
 
 - **Host Client** (`host.py`): Integrates with Claude LLM and manages end-user interactions
 - **MCP Server** (`finance_mcp_server.py`): Provides financial data tools via Alpha Vantage API
